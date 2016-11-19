@@ -1,0 +1,60 @@
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+.game-table{
+ height: 750px;
+}
+
+/*portrait*/
+.game-area-divider{
+	width: 100%;
+	height: 2%;
+	background-color:black;
+}
+
+.game-area-cup{
+	width:100%;
+ 	height:49%;
+ 	background-color: green;
+}
+
+.game-area-public{
+ 	height:49%;
+ 	background-color: blue;
+}
+
+/*landscape*/
+@media(min-width:767px){
+	.game-area-cup{
+		 height:100%;
+		 width:49%;
+		 display: inline;
+		 float:left;
+	}
+
+	.game-area-public{
+		 height:100%;
+		 width:49%;
+		 display: inline;
+		 float:left;
+	}
+
+	.game-area-divider{
+		width: 2%;
+		height: 100%;
+		display: inline;
+		float:left;
+	}
+}
+
